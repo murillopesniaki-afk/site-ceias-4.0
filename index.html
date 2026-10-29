@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEIAS - Portal Escolar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      color: #263445;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #174b38;
+      color: white;
+      padding: 24px 8%;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      color: #d6eadf;
+    }
+
+    nav {
+      background: #103829;
+      padding: 12px 8%;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f5ca70;
+    }
+
+    .banner {
+      padding: 65px 8%;
+      background: linear-gradient(120deg, #dcefe4, #f8f3df);
+    }
+
+    .banner h2 {
+      font-size: 34px;
+      color: #174b38;
+      margin-bottom: 12px;
+    }
+
+    .banner p {
+      max-width: 650px;
+      margin-bottom: 20px;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #174b38;
+      color: white;
+      padding: 11px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      scroll-margin-top: 20px;
+    }
+
+    h2.titulo {
+      color: #174b38;
+      margin-bottom: 18px;
+    }
+
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .cartao {
+      background: white;
+      padding: 23px;
+      border-radius: 10px;
+      border: 1px solid #e0e7e2;
+      box-shadow: 0 3px 10px #00000008;
+    }
+
+    .cartao h3 {
+      color: #174b38;
+      margin-bottom: 10px;
+    }
+
+    .icone {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .aviso {
+      background: #fff5d9;
+      border-left: 5px solid #d8a632;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #103829;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .creditos {
+      color: #f5d58b;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      .banner {
+        padding: 40px 6%;
+      }
+
+      .banner h2 {
+        font-size: 27px;
+      }
+
+      nav {
+        gap: 14px;
+        padding: 14px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="inicio">
+    <h1>CEIAS | Portal Escolar</h1>
+    <p>Educação, informação e comunidade</p>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#informacoes">Informações</a>
+    <a href="#avisos">Avisos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="banner">
+    <h2>Bem-vindo ao nosso portal!</h2>
+    <p>
+      Um espaço para reunir informações, comunicados
+      e novidades importantes para a comunidade escolar.
+    </p>
+    <a class="botao" href="#informacoes">Explorar o portal</a>
+  </div>
+
+  <main>
+
+    <section id="sobre">
+      <h2 class="titulo">Sobre o projeto</h2>
+      <div class="cartao">
+        <p>
+          Este portal apresenta informações escolares em um
+          formato simples e acessível. A proposta é facilitar
+          o acesso a comunicados, orientações e conteúdos
+          relevantes para estudantes, famílias e profissionais
+          da educação.
+        </p>
+      </div>
+    </section>
+
+    <section id="informacoes">
+      <h2 class="titulo">Informações importantes</h2>
+
+      <div class="grade">
+        <article class="cartao">
+          <div class="icone">📚</div>
+          <h3>Vida escolar</h3>
+          <p>
+            Consulte orientações e informações relacionadas
+            à rotina da comunidade escolar.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">📢</div>
+          <h3>Comunicados</h3>
+          <p>
+            Acompanhe os avisos e as novidades divulgadas
+            pela equipe responsável.
+          </p>
+        </article>
+
+        <article class="cartao">
+          <div class="icone">🍎</div>
+          <h3>Alimentação escolar</h3>
+          <p>
+            Conheça a importância da alimentação adequada
+            para a saúde e a aprendizagem dos estudantes.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="avisos">
+      <h2 class="titulo">Mural de avisos</h2>
+
+      <div class="aviso">
+        <h3>📌 Espaço para comunicados</h3>
+        <p>
+          Os avisos da escola poderão ser publicados aqui.
+          Edite este texto para inserir datas, eventos e
+          informações confirmadas.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2 class="titulo">Contato</h2>
+
+      <div class="cartao">
+        <h3>Fale com a escola</h3>
+        <p>
+          Para informações oficiais, consulte os canais
+          de atendimento da instituição.
+        </p>
+        <p>
+          <strong>Instituição:</strong> Colégio Estadual do
+          Campo Irmã Ambrósia Sabatovich
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Portal Escolar — Projeto educacional</p>
+    <p class="creditos">Desenvolvido por Murilo e Brayan</p>
+    <p>Versão simplificada e personalizada</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        console.log('Seção selecionada:', link.textContent);
+      });
+    });
+  </script>
+
+</body>
+</html>
